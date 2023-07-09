@@ -1,0 +1,38 @@
+{
+  "type": "record",
+  "name": "aemet_weather",
+  "fields": [
+    {
+        "name": "id_ema",
+        "type": "long"
+    },
+    {
+        "name": "ts_measurement",
+        "type": "string"
+    },
+    {
+        "name": "locality",
+        "type": "string"
+    },
+    {
+      "name": "Temperature",
+      "type": ["null", "double"],
+      "default": null
+    },
+    {
+      "name": "Rain",
+      "type": ["null", "double"],
+      "default": null
+    },
+    {
+      "name": "Humidity",
+      "type": ["null", "double"],
+      "default": null
+    },
+    {
+      "name": "Cloudy",
+      "type": ["null", "double"],
+      "default": null
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+topics-configuration:
+  - name: aemet-weather
+    num.partitions: 3
+    replication.factor: 1
+    additional-config:
+      compression.type: producer
+      cleanup.policy: delete
+      max.message.bytes: "1048588"
+      min.insync.replicas: "1"
+      retention.ms: "604800000"
+      segment.bytes: "1073741824"
+      segment.ms: "604800000"
+      unclean.leader.election.enable: "false"
